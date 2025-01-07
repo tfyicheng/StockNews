@@ -1,0 +1,223 @@
+.tietu{
+  position: absolute;
+  width: 397rpx;
+  height: 353rpx;
+  right:0.4%;
+  top: 5.9vh;
+}
+.head{
+  background-color:var(--main-color);
+  height:36vh;
+}
+.main{
+  width: 84%;
+  height: 60vh;
+  background-color: white;
+  /* border:1px solid red; */
+  box-shadow: 2px 2px 5px rgba(223, 222, 222, 0.5);
+  margin: -260rpx 8% 0;
+  border-radius: 26rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container{
+  /* border:1px solid black; */
+  position: relative;
+  width: 86%;
+  height:90%;
+}
+.main_c_top{
+  height: 14.8%;
+  /* border:1px solid red; */
+  display: flex;
+}
+.login_text_box,.signUp_text_box{
+  width: 110rpx;
+  /* border:1px solid red; */
+  padding-right:18rpx;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.login_text,.signUp_text{
+  height: 50%;
+  font-size: 38rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20rpx;
+}
+.login_text_border,.signUp_text_border{
+  height:8rpx;
+  width: 28rpx;
+  background-color:white;
+}
+.text_blue .login_text,.text_blue .signUp_text{
+  font-size: 42rpx;
+  color:var(--main-color);
+}
+.text_blue .login_text_border,.text_blue .signUp_text_border{
+  background-color: var(--main-color);
+}
+.login_box,.signUp_box{
+  height: 80%;
+  /* border:1px solid red; */
+}
+.login_box_top{
+  height: 54%;
+  /* border:1px solid red; */
+}
+.input_item{
+  height: 26%;
+  width: 100%;
+  margin: 4% 0 8% 0;
+  background-color: #EEF0FE;
+  border-radius: 100rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  /* display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 100rpx;
+  width: 100%;
+  margin: 4% 0 8% 0;
+  background-color: #EEF0FE;
+  color:var(--main-color); */
+}
+.input_item2{
+  height: 88rpx;
+  width: 100%;
+  margin: 24rpx 0 26rpx 0;
+  background-color: #EEF0FE;
+  border-radius: 100rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* padding-left: 33rpx; */
+  text-align: center;
+}
+.input_item image,.input_item2 image{
+  width: 40rpx;
+  height:44rpx;
+  margin-left: 28rpx;
+  /* border-radius: 50%; */
+  margin-right: 16rpx;
+}
+.input_item input,.input_item2 input{
+  /* height: 30rpx;
+  width:100%;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  display: flex;
+  color:var(--main-color); */
+
+  flex: 1;
+  text-align: center;
+  color:var(--main-color);
+}
+.placeholder_class{
+  flex: 1;
+  color:var(--main-color);
+  /* text-align: left; */
+  text-align: center;
+}
+.nickname-wrapper {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 100rpx;
+  /* height: 10%; */
+  width: 100%;
+  margin: 4% 0 8% 0;
+  background-color: #EEF0FE;
+  color:var(--main-color);
+}
+.nickname-wrapper input{
+  color:var(--main-color);
+}
+
+.nickname-input {
+  flex: 1;
+  text-align: center;
+  color:var(--main-color);
+}
+
+.login_box_bottom{
+  height:40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border:1px solid red; */
+}
+.login_bb_btn{
+  font-size: 28rpx;
+  width: 100%;
+  height: 34%;
+  background-color:var(--main-color);
+  border-radius: 100rpx;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_bb_text{
+  width: 26%;
+  height:10%;
+  font-size: 24rpx;
+  color:var(--main-color);
+  text-align: center;
+  padding-top: 14rpx;
+}
+.bottom{
+  height: 10vh;
+  position: absolute;
+  width: 100%;
+  /* border:1px solid red; */
+  bottom: -30rpx;
+}
+.bottom_top{
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+.bottom_top_text{
+  font-size: 24rpx;
+}
+.hengxian{
+  width: 35%;
+  height: 1rpx;
+  background-color: #f0f0f0;
+}
+.bottom_bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_bottom image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 24rpx;
+  border-radius: 50%;
+}
+
+.bottom_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom_text{
+  display: inline;
+  font-size: 17rpx;
+  color:gray;
+  margin-top: 8rpx;
+}

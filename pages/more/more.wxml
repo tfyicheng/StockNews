@@ -1,0 +1,141 @@
+<!--pages/faxian/faxian.wxml-->
+
+<view id="header">
+
+
+<view class="header_left ">
+<view class="header_left_item {{itemFlag == 1?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="1">发现</view>
+  <view class="header_left_item {{itemFlag == 2?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="2">专栏</view>
+  <view class="header_left_item {{itemFlag == 3?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="3">爆料</view>
+</view>
+
+<view class="header_right">
+  <image src="/img/搜索.png" class="header_right_img"></image>
+  </view>
+
+</view>
+
+<view class="head">
+  <view class="head_left">精选话题</view>
+<view class="head_right">
+  <view style="font-size:17px;color:gray">查看更多</view>
+  <view class="images_1">
+  <image src="/img/向右.png" style="width:17px;height:15px;"></image>
+  </view>
+
+</view>
+</view>
+
+<view class="main">
+  <view class="main_list">
+  <view class="list_1">#夜游黄浦江#
+  </view>
+  <view class="list_2">18001网友在看
+  </view>
+  </view>
+  <view class="main_list">
+    <view class="list_1">#5G套餐
+  </view>
+  <view class="list_2">18001网友在看
+  </view></view>
+  <view class="main_list">
+    <view class="list_1">#垃圾箱刷脸识别
+  </view>
+  <view class="list_2">18001网友在看
+  </view></view>
+  <view class="main_list">
+    <view class="list_1">#上海垃圾分类
+  </view>
+  <view class="list_2">18001网友在看
+  </view></view>
+  <view class="main_list">  
+  <view class="list_1">#美国加州地震
+  </view>
+  <view class="list_2">18001网友在看
+  </view></view>
+  <view class="main_list"> <view class="list_1">#豫园城隍庙
+  </view>
+  <view class="list_2">18001网友在看
+  </view></view>
+ </view>
+ 
+<view class="kong"></view>
+ 
+  <view class="head">
+  <view class="head_left">经常关注</view>
+<view class="head_right">
+  <view style="font-size:17px;color:gray">展开全部</view>
+  <view class="images_1">
+  <image src="/img/向右.png" style="width:17px;height:15px;"></image>
+  </view>
+</view>
+</view>
+
+   <view class="contain"> 
+    <view class="contain_list" > 
+   <image src="/img/法律.png " style="width:48px;height:48px;border-radius:50%;"></image>
+     <view style="font-size:12px">  
+     法律 </view>
+</view>
+<view class="contain_list"><image src="/img/健康.png " style="width:48px;height:48px;border-radius:50%"></image>
+     <view style="font-size:12px"> 
+     健康</view>
+     </view>
+<view class="contain_list"><image src="/img/娱乐.png " style="width:48px;height:48px;border-radius:50%"></image>
+     <view style="font-size:12px">  <text>娱乐</text>  </view></view>
+<view class="contain_list"><image src="/img/影视.png " style="width:48px;height:48px;border-radius:50%"></image>
+     <view style="font-size:12px">  <text>影视</text>  </view></view>
+<view class="contain_list"><image src="/img/交通.png " style="width:48px;height:48px;border-radius:50%"></image>
+     <view style="font-size:12px">  <text>交通</text>  </view></view>
+     <view class="contain_list"><image src="/img/音乐.png " style="width:48px;height:48px;border-radius:50%"></image>
+     <view style="font-size:12px">  <text>音乐</text>  </view></view>
+     <view class="contain_list"><image src="/img/美食.png " style="width:48px;height:48px;border-radius:50%"></image>
+     <view style="font-size:12px">  <text>美食</text>  </view></view>
+     <view class="contain_list"><image src="/img/体育.png " style="width:48px;height:48px;border-radius:50%"></image>
+     <view style="font-size:12px" bindtap="btn">  <text>体育</text>  </view></view>
+
+ </view>
+
+<view class="kong"></view>
+
+ <view class="footer">
+ <view class="xinxi"> 
+   <image src="/img/touxiang.webp" style="width:50px;height:50px;border-radius:50%">
+   </image>
+   <view class="he">
+  <view>无敌风火轮
+  <view style="font-size:22rpx;margin-top:5px">3小时前</view>
+  </view>
+  <view class="lv8">Lv8</view>
+  </view>
+   </view>
+  <view class="guanzhu">+关注</view>
+  <view class="word_1">直击建党100周年大会，厉害了，我的国！</view>
+  
+  <view class="foot_last">
+ <view > 
+<video src="https://vd3.bdstatic.com/mda-mg0etue3n0mxuc2j/360p/h264/1625135288514553792/mda-mg0etue3n0mxuc2j.mp4?v_from_s=hkapp-haokan-nanjing&auth_key=1625451597-0-0-c650107bf30c2829bc5a93b6d893caca&bcevod_channel=searchbox_feed&pd=1&pt=3&abtest="  binderror="videoerrorCallback" style="width:150px;height:120px"></video>
+</view>
+
+  <view class="word_2">永远跟党走,奋进新征程——庆祝建党100周年
+<view class="foot_pic"> 
+  <image src="/img/touxiang-1.webp" ></image>
+  <image src="/img/touxiang-2.webp" ></image>
+  <image src="/img/touxiang-3.webp" ></image>
+     </view> 
+
+     <view class="foot_right">
+  <view class="pinglun">
+    <image src="/img/评论.png" style="width:15px;height:12px;"></image>
+    <view  class= "last">999+评论</view>
+     </view>
+    <view class="pinglun">
+    <image src="/img/心.png" style="width:15px;height:12px;margin-left:5px;"></image>
+    <view class= "last" >839点赞</view>
+ </view>
+</view>
+  
+  </view> 
+ 
+  </view>
+ </view>

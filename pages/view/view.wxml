@@ -1,0 +1,286 @@
+<!-- 头部 -->
+<view id="header">
+  <view class="header_left ">
+  <view class="header_left_item {{itemFlag == 1?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="1">推荐</view>
+  <view class="header_left_item {{itemFlag == 2?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="2">小视频</view>
+  <view class="header_left_item {{itemFlag == 3?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="3">电台</view>
+  <view class="header_left_item {{itemFlag == 4?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="4">直播</view>
+
+  </view>
+  <view class="header_right">
+  <image src="../../images/search.png" class="header_right_img"></image>
+  </view>
+</view>
+<!-- end -->
+   <!--head_menu-->
+   <view wx:if="{{itemFlag ==1?'true':''}}">
+   <view class="head_menu">
+      <view class="menu_icon">
+      <image src="../../images/shijie_img/m1.png" class="menu_img"></image>
+       <view class="f12">人气推荐</view>
+      </view>
+      
+      <view class="menu_icon">
+      <image src="../../images/shijie_img/m2.png" class="menu_img"></image>
+      <view class="f12">猜你喜欢</view>
+      </view>
+      
+      <view class="menu_icon">
+      <image src="../../images/shijie_img/m3.png" class="menu_img"></image>
+      <view class="f12">网络竞技</view>
+      </view>
+
+      <view class="menu_icon">
+      <image src="../../images/shijie_img/m4.png" class="menu_img"></image>
+      <view class="f12">娱乐天地</view>
+      </view>
+   </view>
+<!--menu_end-->
+
+<!-- vido start -->
+<view class="all_vido">
+<view class="play_vido">
+<video
+      id="myVideo"
+      style="z-index: {{tab_image=='none'?'1':'-1'}};"
+      show-center-play-btn='{{true}}'
+      enable-play-gesture='{{true}}'
+      auto-pause-if-navigate='{{true}}'
+      class="videoStyle pr"  
+      src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" 
+      ></video>   
+
+      <!-- text -->
+<view class="vido_text">
+    <view class="vido_text_1">播放12309</view>
+    <view class="vido_text_2">
+    <image class="vido_img" src="../../images/shijie_img/send.jpg"></image>
+    <view>679分享</view>
+    </view>
+    <view class="vido_text_3">
+    <image class="vido_img" src="../../images/shijie_img/tile.jpg"></image>
+    <view>123评论</view>
+    </view>
+    <view class="vido_text_4">
+    <image class="vido_img" src="../../images/shijie_img/like.jpg"></image>
+    <view>132点赞</view>
+    </view>
+    </view> 
+<!-- text end --> 
+      <!-- 视频-->  
+      <view class="vido_all" style="display: {{tab_image}};" >
+        <cover-view class="controls pa" id="controls" > 
+        
+        <!--  视频 封面图片   -->
+          <cover-image class="play_img" style="z-index: 30;" src="../../images/shijie_img/vido_img1.jpg" 
+          />
+        </cover-view>
+         
+
+        <!-- 中间的播放图片标志 -->
+        <cover-view class="play" style="z-index:200;" bindtap="videoPlay">
+          <cover-text class="img_text">【视频推荐】腾讯大学，智慧分享生态共赢</cover-text> 
+          <cover-view class="play_logo">
+          <cover-image class="play_logo_img" bindtap="bindplay" data-id="1" src="../../images/shijie_img/play.png" />
+        </cover-view>
+        </cover-view>
+ </view>
+</view>
+
+</view>
+<!-- end -->
+<view class="text"></view>
+
+<!-- vido start -->
+<view class="all_vido">
+<view class="play_vido">
+<video
+      id="myVideo11"
+      style="z-index: {{tab_image1=='none'?'1':'-1'}};"
+      show-center-play-btn='{{true}}'
+      enable-play-gesture='{{true}}'
+      auto-pause-if-navigate='{{true}}'
+      class="videoStyle pr"  
+      src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" 
+      ></video>   
+
+      <!-- text -->
+<view class="vido_text">
+    <view class="vido_text_1">播放12309</view>
+    <view class="vido_text_2">
+    <image class="vido_img" src="../../images/shijie_img/send.jpg"></image>
+    <view>679分享</view>
+    </view>
+    <view class="vido_text_3">
+    <image class="vido_img" src="../../images/shijie_img/tile.jpg"></image>
+    <view>123评论</view>
+    </view>
+    <view class="vido_text_4">
+    <image class="vido_img" src="../../images/shijie_img/like.jpg"></image>
+    <view>132点赞</view>
+    </view>
+    </view> 
+<!-- text end --> 
+      <!-- 视频-->  
+      <view class="vido_all" style="display: {{tab_image1}};" >
+        <cover-view class="controls pa" id="controls" > 
+        
+        <!--  视频 封面图片   -->
+          <cover-image class="play_img" style="z-index: 30;" src="../../images/shijie_img/vido_img1.jpg" 
+          />
+        </cover-view>
+         
+
+        <!-- 中间的播放图片标志 -->
+        <cover-view class="play" style="z-index:200;" bindtap="videoPlaytwo">
+          <cover-text class="img_text">【视频推荐】腾讯大学，智慧分享生态共赢</cover-text> 
+          <cover-view class="play_logo">
+          <cover-image class="play_logo_img" bindtap="bindplay" data-id="1" src="../../images/shijie_img/play.png" />
+        </cover-view>
+        </cover-view>
+ </view>
+</view>
+
+</view>
+<!-- end -->
+<!-- end -->
+</view>
+
+
+
+<diantai wx:if="{{itemFlag==3 ?'true':''}}"></diantai>
+
+
+<view wx:if="{{itemFlag==2 || itemFlag==4}}">
+<view class="onevideo" >
+<video id="myVideo_" src="{{videoSrc}}" enable-danmu controls show-fullscreen-btn show-center-play-btn="{{false}}" auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+  <cover-view class="video_cover" wx:if="{{isShow}}" bindtap="bindplay">
+    <cover-image src="{{videoCoverImg}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon"></cover-image>
+    <cover-view class="zaixian">
+    <view  class="zaixian_img"><image src="/img/video_img/新消息红点.png"></image></view>
+        <view class="zaixian_text">直播中</view>
+        <view  class="zaixian_text">2300在线</view>
+    </cover-view>
+
+    <cover-view class="video_bg_black">
+          <view class="jru">进入直播间</view>
+    </cover-view>      
+  </cover-view>
+</video>
+</view>
+<view class="mid">
+<view class="mid_one">我的直播间</view>
+<view class="mid_two">查看全部120   ></view>
+</view>
+<view class="video_list">
+<view class="video_one"  bindtap="videoplayer">
+<video id="myVideo1" src="{{videoSrc}}"  >
+  <cover-view class="video_cover" >
+    <cover-image src="{{videoCoverImg1}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon1"></cover-image>      
+  </cover-view>
+  <cover-view class="zaixian1">
+        <view  class="zaixian_text1">在线12.9万</view>
+    </cover-view>
+    <cover-view class="zaixian2">
+        <view  class="zaixian_text2">直播中</view>
+    </cover-view>
+</video>
+</view>
+<view class="video_one" bindtap="videoplayer1">
+<video id="myVideo1" src="{{videoSrc}}" enable-danmu controls show-fullscreen-btn show-center-play-btn="{{false}}" auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+  <cover-view class="video_cover" >
+    <cover-image src="{{videoCoverImg2}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon1"></cover-image>      
+  </cover-view>
+  <cover-view class="zaixian1">
+        <view  class="zaixian_text1">在线33.9万</view>
+    </cover-view>
+    <cover-view class="zaixian2">
+        <view  class="zaixian_text2">直播中</view>
+    </cover-view>
+</video>
+</view>
+<view class="video_one" bindtap="videoplayer2">
+<video id="myVideo1" src="{{videoSrc}}" enable-danmu controls show-fullscreen-btn show-center-play-btn="{{false}}" auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+  <cover-view class="video_cover">
+    <cover-image src="{{videoCoverImg3}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon1"></cover-image>      
+  </cover-view>
+  <cover-view class="zaixian1">
+        <view  class="zaixian_text1">在线10.2万</view>
+    </cover-view>
+    <cover-view class="zaixian2">
+        <view  class="zaixian_text2">直播中</view>
+    </cover-view>
+</video>
+</view>
+<view class="video_one" bindtap="videoplayer3">
+<video id="myVideo1" src="{{videoSrc}}" enable-danmu controls show-fullscreen-btn show-center-play-btn="{{false}}" auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+  <cover-view class="video_cover">
+    <cover-image src="{{videoCoverImg4}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon1"></cover-image>      
+  </cover-view>
+  <cover-view class="zaixian1">
+        <view  class="zaixian_text1">在线99.6万</view>
+    </cover-view>
+    <cover-view class="zaixian2">
+        <view  class="zaixian_text2">直播中</view>
+    </cover-view>
+</video>
+</view>
+
+
+</view>
+<view class="content">
+<view class="content_text">每时每刻总览天下</view>
+<view class="content_text">每天及时呈现最劲爆得快讯</view>
+<view class="content_text">立足上海放眼全球</view>
+<view class="content_text">最最最最‘历史前三’</view>
+</view>
+<view class="line"></view>
+<view class="bottom">
+<view class="bottom_text">全部直播</view>
+<view class="bottom_text">大神推荐</view>
+<view class="bottom_text">视频美女</view>
+<view class="bottom_text">绝地网游</view>
+</view>
+<view class="video_list1">
+<view class="video_one1" bindtap="videoplayer4">
+<video id="myVideo2" src="{{videoSrc}}" enable-danmu controls show-fullscreen-btn show-center-play-btn="{{false}}" auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+  <cover-view class="video_cover">
+    <cover-image src="{{videoCoverImg5}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon2"></cover-image>      
+  </cover-view>
+</video>
+</view>
+<view class="video_one1" bindtap="videoplayer5">
+<video id="myVideo2" src="{{videoSrc}}" enable-danmu controls show-fullscreen-btn show-center-play-btn="{{false}}" auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+  <cover-view class="video_cover">
+    <cover-image src="{{videoCoverImg6}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon2"></cover-image>      
+  </cover-view>
+</video>
+</view>
+<view class="line2"></view>
+<view class="video_one1" bindtap="videoplayer6">
+<video id="myVideo2" src="{{videoSrc}}" enable-danmu controls show-fullscreen-btn show-center-play-btn="{{false}}" auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+  <cover-view class="video_cover">
+    <cover-image src="{{videoCoverImg8}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon2"></cover-image>      
+  </cover-view>
+</video>
+</view>
+<view class="video_one1" bindtap="videoplayer7">
+<video id="myVideo2" src="{{videoSrc}}" enable-danmu controls show-fullscreen-btn show-center-play-btn="{{false}}" auto-pause-if-navigate auto-pause-if-open-native show-play-btn object-fit="fill" bindpause="bindpause" bindended="bindended" >
+  <cover-view class="video_cover">
+    <cover-image src="{{videoCoverImg7}}" mode="widthFix"></cover-image>
+    <cover-image src="{{videoPlayIcon}}" mode="widthFix" class="video_play_icon2"></cover-image>      
+  </cover-view>
+</video>
+</view>
+</view>
+</view>
+
+

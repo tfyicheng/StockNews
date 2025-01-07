@@ -1,0 +1,202 @@
+/* pages/faxian/faxian.wxss */
+#header{
+  width: 100%;
+  height:45px ;
+  line-height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /* border: 1rpx solid  red; */
+  
+}
+.header_left{
+  padding-left: 24rpx;
+  box-sizing: border-box;
+  width:90vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  /* border: 2rpx solid  red; */
+}
+.header_left_item{
+  font-size: 20px;
+  padding-bottom:14rpx;
+  font-weight: 550;
+  color:#333;
+  /* border-bottom: 7.4rpx solid #5190EA; */
+  border-bottom: 7.2rpx solid white;
+}
+.selectedBlue {
+  color:#5190EA;
+  border-bottom: 7.2rpx solid #5190EA;
+}
+.header_right{
+  padding-bottom: 22rpx;
+  display: flex;
+  align-items: center;
+  /* border: 2rpx solid  red; */
+}
+.header_right_img{
+  width: 56rpx;
+  height: 60rpx;
+  padding-bottom: 2px;
+}
+
+
+.head{
+  width: 100%;
+  height:50px;
+  line-height: 50px;
+  border: 1px solid rgb(209, 202, 205);
+  display: flex;
+  justify-content: space-between; 
+}
+.head_left{
+  width: 80px;
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20px;
+  /* border: 1px solid red; */
+}
+.head_right{
+  width: 100px;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.images_1 {
+  text-align: center;
+  width: 25px;
+margin-top: 2px;
+}
+
+.main{
+  width: 94%;
+  height:135px;
+   margin: 3%;
+   align-items: center;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+.main_list{
+  width: 31%;
+  height:48px;
+  padding-top: 11px ;
+text-align: center;
+white-space: nowrap;
+  /* border: 1px solid skyblue; */
+  background-color: rgb(240, 239, 239);
+}
+.list_1{
+  font-size: 14px;
+  font-weight: 400;
+}
+.list_2{
+font-size: 11px;
+color:gray;
+}
+.kong{
+  width: 100%;
+  height: 10px;
+  background-color: rgb(228, 227, 227);
+}
+ .contain{
+  width: 94%;
+  margin: 3%;
+  padding-top: 5px;
+  height: 150px;
+  text-align: center;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+
+ }
+ .contain_list{
+   width:25%;
+}
+.footer{
+  width: 92%;
+  height:200px;
+  margin: 4%;
+  /* border:1px solid blueviolet; */
+}
+.lv8{
+  width: 40px;
+  height: 20px;
+  font-size: 25rpx;
+  text-align: center;
+  border-radius: 12px;
+  background-color: orange;
+  margin: 3px 5px;
+}
+.he{
+  display: flex;
+  margin: 8px;
+}
+.xinxi{
+  display: flex;
+  
+}
+.guanzhu{
+  width:70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background-color:rgb(49, 49, 240);
+  color:white;
+  float: right;
+  margin:-45px 0px;
+}
+.word_1{
+  margin: 10px;
+  }
+ .foot_last{
+   width: 100%;
+   height:120px;
+   /* border: 1px solid blue; */
+   display: flex;
+   background-color: rgb(211, 210, 210);
+ } 
+.word_2{
+width: 60%;
+margin:18px 8px;
+}
+.foot_pic image{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+margin-left: 4px;
+}
+.foot_pic{
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  /* border:1px solid purple; */
+ text-align: center;
+ margin-top:8px;
+}
+
+.pinglun{
+  width: 65px;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+.foot_right{
+  width: 150px;
+  /* border: 1px solid green; */
+  display: flex;
+float: right;
+  margin:-30px -25px;
+}
+.last{
+  width: 50px;
+  height:20px;
+  /* border:1px solid purple; */
+  font-size:10px;
+  margin :-4px 2px
+}

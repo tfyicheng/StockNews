@@ -1,0 +1,111 @@
+<view id="container">
+  <view class="head_box">
+    <view class="head_main">
+      <view class="head_main_left">
+        <image class="user_head" src="{{userInfo.avatarUrl}}"></image>
+        <label class="user_flag" style="background: {{userInfo.visitors?'red':'#1576E8'}};">{{userInfo.visitors?"游客":"用户"}}</label>
+        <view class="user_name">{{userInfo.nickName}}</view>
+      </view>
+      <view class="head_main_right">
+        <view class="head_mr_top">
+          <image src="../../images/grzxImg/grzx1.png" class="head_mrt_img"></image>
+          <view class="head_mrt_text">20°C</view>
+        </view>
+        <view class="head_mr_bottom">
+          <image src="../../images/grzxImg/grzx2.png" class="head_mrb_img"></image>
+          <view class="head_mrb_text">签到</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="part2">
+    <view>
+      <image src="../../images/grzxImg/grzx3.png"></image>
+      <text>我的关注</text>
+    </view>
+    <view>
+      <image src="../../images/grzxImg/grzx4.png"></image>
+      <text>资讯收藏</text>
+    </view>
+    <view>
+      <image src="../../images/grzxImg/grzx5.png"></image>
+      <text>阅读记录</text>
+    </view>
+    <view>
+      <image src="../../images/grzxImg/grzx6.png"></image>
+      <text>我赞过的</text>
+    </view>
+    <view>
+      <image src="../../images/grzxImg/grzx7.png"></image>
+      <text>邀请好友</text>
+    </view>
+  </view>
+
+  <view class="part3">
+    <image class="p3_left" src="../../images/grzxImg/grzx8.png"></image>
+    <view class="p3_right">
+      <view class="p3r_left">
+        <view class="p3rl_text1">积分商城</view>
+        <view class="p3rl_text2">商品种类丰富总有你想要的</view>
+      </view>
+      <view class="p3r_right">马上邀请</view>
+    </view>
+  </view>
+
+  <view class="item part4 ">
+    <view class="p4_left item_left">
+      <image class="p4l_img item_img" src="../../images/grzxImg/grzx9.png"></image>
+      <view class="p4l_text item_text">我的消息</view>
+    </view>
+    <view class="p4_right item_right">></view>
+  </view>
+
+  <view class="item">
+    <view class="item_left">
+      <image class="item_img" src="../../images/grzxImg/grzx10.png"></image>
+      <view class="item_text">我的订阅</view>
+    </view>
+    <view class="item_right">></view>
+  </view>
+  <view class="item">
+    <view class="item_left">
+      <image class="item_img" src="../../images/grzxImg/grzx11.png"></image>
+      <view class="item_text">我的参与</view>
+    </view>
+    <view class="item_right">></view>
+  </view>
+  <view class="item">
+    <view class="item_left">
+      <image class="item_img" src="../../images/grzxImg/grzx12.png"></image>
+      <view class="item_text">绑定邀请码</view>
+    </view>
+    <view class="item_right">></view>
+  </view>
+  <view class="item" style="margin-bottom:2vh;"  bindtap="quit">
+    <view class="item_left">
+      <image class="item_img" src="../../images/grzxImg/grzx13.png"></image>
+      <view class="item_text" >退出登录</view>
+    </view>
+    <view class="item_right">></view>
+  </view>
+  
+  <view class="item">
+    <view class="item_left">
+      <image class="item_img" src="../../images/grzxImg/grzx14.png"></image>
+      <view class="item_text">我要投稿</view>
+    </view>
+    <view class="item_right">></view>
+  </view>
+  
+  <view class="part5">
+    <image class="p5_left" src="../../images/grzxImg/grzx15.png"></image>
+    <view class="p5_right">
+      <view class="p5r_left">
+        <view class="p5rl_text1">赢取积分</view>
+        <view class="p5rl_text2">赢积分兑换好礼等你来挑战</view>
+      </view>
+      <view class="p5r_right">抽积分</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,100 @@
+<view id="container">
+  <!-- <image class="tietu" src="../../images/logo1.png"></image> -->
+  <view class="head"></view>
+  <view class="main">
+    <view class="main_container">
+      <view class="main_c_top">
+        <view class="login_text_box {{ colorFlag == 0?'text_blue':''}}" bindtap="changeFlag" data-index="0">
+          <view class="login_text">登录</view>
+          <view class="login_text_border"></view>
+        </view>
+        <view class="signUp_text_box {{  colorFlag == 1?'text_blue':''}}"
+        bindtap="changeFlag" data-index="1">
+          <view class="signUp_text " >注册</view>
+          <view class="signUp_text_border"> </view>
+        </view>
+      </view>
+      <!-- <image src="../../images/loginImg/login1.png"></image> 
+      <image src="../../images/loginImg/login2.png"></image>  -->
+      <view class="login_box " wx:if="{{colorFlag==0}}">
+        <view class="login_box_top">
+
+          <view class="input_item">
+            <input type="text" placeholder="请输入您的账号" placeholder-class="placeholder_class" bindinput="getLoUsername" value="{{loginUsername}}"></input>
+          </view>
+
+          <view class="input_item">
+            <input type="password" placeholder="请输入您的密码"  placeholder-class="placeholder_class" bindinput="getLoPwd" value="{{loginPwd}}"></input>
+          </view>          
+          
+          <!-- <view class="nickname-wrapper">
+            <input type="nickname" class="placeholder_class" placeholder="请输入您的账号"   placeholder-class="placeholder_class" bindinput="getLoUsername" value="{{loginUsername}}" />
+          </view>
+
+          <view class="nickname-wrapper">
+            <input type="password" class="nickname-input" placeholder="请输入您的密码" bindinput="getLoPwd" value="{{loginPwd}}"/>
+          </view> -->
+
+        </view>
+
+
+        <view class="login_box_bottom">
+          <view class="login_bb_btn" bindtap="login">立即登录</view>
+          <view class="login_bb_text">忘记密码？</view>
+        </view>
+        
+      </view>
+      <view class="signUp_box " wx:if="{{colorFlag==1}}">
+        <view class="input_item2">
+            <!-- <image src="../../images/loginImg/login1.png"></image> -->
+            <input type="text" placeholder="请输入您的账号" placeholder-class="placeholder_class"   bindinput="getSuUsername" bindblur="checkSuUsername" value="{{suUsername}}"></input>
+        </view>
+
+        <view class="input_item2">
+            <input type="text" placeholder="请输入您的昵称" placeholder-class="placeholder_class"   bindinput="getnickName"  value="{{userInfo.nickName}}"></input>
+        </view>
+       
+        <view class="input_item2">
+            <!-- <image src="../../images/loginImg/login2.png"></image> -->
+            <input type="text" placeholder="请输入您的密码" placeholder-class="placeholder_class"   bindinput="getSuPwd" bindblur="checkSuPwd" value="{{suPwd}}"></input>
+        </view>
+        <view class="input_item2" style="margin-bottom:40rpx">
+            <!-- <image src="../../images/loginImg/login2.png"></image> -->
+            <input type="text" placeholder="请再次输入您的密码" placeholder-class="placeholder_class"   bindinput="getSuPwd2" bindblur="checkSuPwd2" value="{{suPwd2}}"></input>
+        </view>
+        <view class="login_box_bottom">
+          <view class="login_bb_btn" bindtap="zhuce">立即注册</view>
+        </view>
+      </view>
+      <view class="bottom" wx:if="{{colorFlag==0}}">
+        <view class="bottom_top">
+          <view class="hengxian"></view>
+          <view class="bottom_top_text">更多登录方式</view>
+          <view class="hengxian"></view>
+        </view>
+        <view class="bottom_bottom">
+          <view class="bottom_item">
+            <image src="../../images/loginImg/login3.png"></image>
+            <text  class="bottom_text">QQ</text>
+          </view>
+
+          <view class="bottom_item">
+            <image src="../../images/loginImg/login4.png"></image>
+            <text  class="bottom_text">微信</text>
+          </view>
+        
+          <view class="bottom_item" bind:tap="testlogin">
+            <image src=" ../../images/grzxImg/grzx7.png"></image>
+            <text  class="bottom_text">游客</text>
+          </view>
+          <!-- <image src="../../images/loginImg/login5.png"></image> -->
+        
+
+         
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  
+</view>

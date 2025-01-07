@@ -1,0 +1,102 @@
+<view class="main">
+
+<view id="search">
+<view class="search_left">
+  <image src="../../images/redian/dingwei.png"></image>
+  北京
+</view>
+<view class="search_mid">
+  <image src="../../images/redian/sousuo.png"></image>
+  <input type="text" placeholder="大家都在搜新中国70周年..."></input>
+</view>
+<view class="search_right">
+  <image src="../../images/redian/tianqi.png"></image>
+  23°c
+</view>
+</view>
+<view id="header">
+<scroll-view scroll-x="true" enable-flex="true">
+<view class="header_left_item {{itemFlag == 1?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="1">热点</view>
+<view class="header_left_item {{itemFlag == 2?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="2">关注</view>
+<view class="header_left_item {{itemFlag == 3?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="3">时尚</view>
+<view class="header_left_item {{itemFlag == 4?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="4">音乐</view>
+<view class="header_left_item {{itemFlag == 5?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="5">美食</view>
+<view class="header_left_item {{itemFlag == 6?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="6">美图</view>
+<view class="header_left_item {{itemFlag == 7?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="7">旅游</view>
+<view class="header_left_item {{itemFlag == 8?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="8">xxx</view>
+</scroll-view>
+<view class="header_right">
++
+</view>
+</view>
+
+<view class="aaa" wx:if="{{itemFlag==1 || itemFlag==3 || itemFlag==5 || itemFlag==7}}">
+
+   <view>
+        <swiper autoplay="true" circular="true" interval="1800" indicator-dots="true">
+            <swiper-item wx:for="{{list}}" wx:key="*this">
+             
+                <image class="swiper_img" src="{{item.url}}"> </image>
+            </swiper-item>  
+        </swiper>
+   </view>
+   <view class="line_view"></view>
+   <view class="desc_body" wx:for="{{center_news}}">
+      <view class="desc_body_head">
+          <view style="margin-top:5px;font-size:13px;">{{item.desc}}</view>
+      </view>
+      <view class="desc_body_main">
+           <image class="desc_body_img" src="{{item.imgurl[0]}}"></image>
+           <image class="desc_body_img" src="{{item.imgurl[1]}}"></image>
+           <image class="desc_body_img" src="{{item.imgurl[2]}}"></image>
+        
+      </view>
+    
+      <view class="desc_body_footer">
+            <view class="desc_body_tou">
+                <text >{{item.from_where}}</text>
+            </view>
+            <view class="desc_body_pinglunRen">
+                <image src="{{item.user_photo}}"></image>
+                <text>{{item.username}}</text><text>|</text><text>{{item.time}}</text>
+            </view>
+            <view class="pinglun_zan">
+             <view class="pinglun_zan_left">
+                <image class="pinglun_zan_img" src="../../images/redian/pinglun.png"></image>
+                 <text>{{item.pinglun_num}}</text>
+              </view>
+              <view class="pinglun_zan_left">
+              <image class="pinglun_zan_img" src="../../images/redian/dianzan.png"></image>
+                 <text>{{item.zan_num}}</text>
+              </view>
+          </view>
+      </view>
+      
+   </view>
+
+   <view class="m_bottom" wx:for="{{bottom_news}}" wx:key="*this" >
+      <view class="left">
+          <view class="left_text">
+          <text>{{item.desc}}</text>
+          </view>
+          <view class="desc_body_footer ft_bottom">
+            <view class="desc_body_tou">
+                <text >{{item.from_where}}</text>
+            </view>
+            <view class="desc_body_pinglunRen">
+                <image src="{{item.user_photo}}"></image>
+                <text>{{item.username}}</text><text>|</text><text>{{item.time}}</text>
+            </view>    
+          </view>
+      </view>
+      <view class="right">
+        <view>
+          <image src="{{item.url}}"></image>
+        </view>
+      </view>
+    </view>
+ </view>
+  <yinyue  wx:else></yinyue>
+</view>
+
+

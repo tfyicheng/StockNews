@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "diantai":"../../components/live/live"
+  },
+  "navigationBarTitleText": "视讯",
+  "enablePullDownRefresh": true
+}

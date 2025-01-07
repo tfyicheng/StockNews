@@ -1,0 +1,97 @@
+<!--components/yinyue/yinyue.wxml-->
+<view class="box">
+   <view class="box_head">
+        <view class="left1">新歌试听</view>
+        <view class="right1">
+      
+        <image class="huan_photo" src="../../images/redian/huanyihuan.png"></image>
+       
+         <text style="color:gray;">换一换</text> 
+        </view>
+   </view>
+   <view class="box_second">
+     <view class="img_list" >
+            <scroll-view scroll-x="true" enable-flex="true" class="assc">
+                <view class="img_list_img" wx:for="{{recom_list}}" wx:key="*this" style="background:url('{{item.url}}') no-repeat;width: 100px;">
+                    <view style="color:white;height: 70px;width: 100px;background-color:rgba(0,0,0,0.2);border: 1px solid white;border-radius:10px;"> 
+                    <view style="margin-top:10px;" >{{item.song_name}} </view>
+                    <view style="margin-top:10px;height:25px;">
+                        <image src="../../images/redian/tingyinyue.png" ></image>
+                        <text style="float:left;margin-left:3px;">{{item.singer_name}}</text> 
+                    </view>
+                    </view>
+                </view>
+            </scroll-view>  
+    </view>
+    <view class="img_list" >
+            <scroll-view scroll-x="true" enable-flex="true" class="assc">
+                <view class="img_list_img" wx:for="{{recom_list1}}" wx:key="*this" style="background:url('{{item.url}}') no-repeat;width: 100px;">
+                    <view style="color:white;height: 70px;width: 100px;background-color:rgba(0,0,0,0.2);border: 1px solid white;border-radius:10px;"> 
+                    <view style="margin-top:10px;" >{{item.song_name}} </view>
+                    <view style="margin-top:10px;height:25px;">
+                        <image src="../../images/redian/tingyinyue.png" ></image>
+                        <text style="float:left;margin-left:3px;">{{item.singer_name}}</text> 
+                    </view>
+                    </view>
+                </view>
+            </scroll-view>  
+         </view>
+    
+  </view>
+
+   <view class="box_third">
+     <view class="list">
+         <view class="list_wrap">
+              <image src="../../images/redian/bang.png"></image>
+              <view class="wenzi">新歌榜</view>
+         </view>
+         <view class="list_wrap">
+              <image src="../../images/redian/yanchang.png"></image>
+              <view class="wenzi">演唱会</view>
+         </view>
+         <view class="list_wrap">
+              <image src="../../images/redian/singer.png"></image>
+              <view class="wenzi">歌手</view>
+         </view>
+         <view class="list_wrap">
+              <image src="../../images/redian/zhuanji.png"></image>
+              <view class="wenzi">专辑</view> 
+         </view>
+     </view>
+   </view>
+
+   <view class="qw"></view>
+   <view id="header">
+  <view class="header_left ">
+  <view class="header_left_item {{itemFlag == 1?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="1">最新报道</view>
+  <view class="header_left_item {{itemFlag == 2?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="2">内地</view>
+  <view class="header_left_item {{itemFlag == 3?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="3">港台</view>
+  <view class="header_left_item {{itemFlag == 4?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="4">日韩</view>
+  <view class="header_left_item {{itemFlag == 5?'selectedBlue':''}}" bindtap="changeItemFlag" data-index="5">欧美</view>
+  </view>
+ 
+</view>
+<view class="m_bottom" style="margin-top:10px；" wx:for="{{bottom_news}}">
+        <view class="left">
+            <view class="left_text">
+            <text>{{item.desc}}</text>
+            </view>
+            <view class="desc_body_footer ft_bottom">
+              <view class="desc_body_tou">
+                  <text >{{item.from_where}}</text>
+              </view>
+              <view class="desc_body_pinglunRen">
+                  <image src="{{item.user_photo}}"></image>
+                  <text>{{item.username}}</text><text>|</text><text>{{item.time}}</text>
+              </view>    
+            </view>
+        </view>
+        <view class="right">
+          <view>
+            <image src="{{item.imgurl}}"></image>
+          </view>
+        </view>
+     
+   </view>
+
+</view>

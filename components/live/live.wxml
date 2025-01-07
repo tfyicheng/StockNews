@@ -1,0 +1,138 @@
+<!--components/diantai/diantai.wxml-->
+<view class="diantai_container">
+  
+  <swiper indicator-dots='true' indicator-color='lightgray' indicator-active-color='gray' autoplay='true' next-margin="200rpx">
+    <swiper-item >
+      <view class="sw_item">
+        <image class="sw_item_left" src="../../images/diantaiImg/4091.jpg"></image>
+        <view class="sw_item_right">
+          <view class="sw_item_r_text">醉后视频</view>
+          <view class="sw_item_r_imgItem">
+            <image src="../../images/diantaiImg/bofang.png"></image>
+            醉后调频-管好你的坏脾气
+          </view>
+          <view class="sw_item_r_imgItem">
+            <image src="../../images/diantaiImg/bofang.png"></image>
+            醉后调频-我是你爸爸
+          </view>
+          <view class="sw_item_r_imgItem2">
+            <image src="../../images/diantaiImg/listen.png"></image>
+            播放：62.4万次
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item >
+      <view class="sw_item">
+        <image class="sw_item_left" src="../../images/diantaiImg/4091.jpg"></image>
+        <view class="sw_item_right">
+          <view class="sw_item_r_text">醉后视频</view>
+          <view class="sw_item_r_imgItem">
+            <image src="../../images/diantaiImg/bofang.png"></image>
+            醉后调频-管好你的坏脾气
+          </view>
+          <view class="sw_item_r_imgItem">
+            <image src="../../images/diantaiImg/bofang.png"></image>
+            醉后调频-我是你爸爸
+          </view>
+          <view class="sw_item_r_imgItem2">
+            <image src="../../images/diantaiImg/listen.png"></image>
+            播放：62.4万次
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+</swiper>
+
+<view class="part2">
+  <view class="part2_title">正在直播</view>
+  <view class="part2_content">
+    <view class="p2_content_item">
+      <image src="../../images/diantaiImg/diantai1.png" class="p2_c_i_left"></image>
+      <view class="p2_c_i_right">
+        <view class="p2_cir_top">
+          <view class="p2_cirt_left">上海流行音乐</view>
+          <view class="p2_cirt_right">新</view>
+        </view>
+        <view class="p2_cir_bottom">音乐随心听</view>
+      </view>
+    </view>
+    <view class="p2_content_item">
+      <image src="../../images/diantaiImg/diantai2.png" class="p2_c_i_left"></image>
+      <view class="p2_c_i_right">
+        <view class="p2_cir_top">
+          <view class="p2_cirt_left">上海流行音乐</view>
+          <view class="p2_cirt_right">新</view>
+        </view>
+        <view class="p2_cir_bottom">音乐随心听</view>
+      </view>
+    </view>
+    <view class="p2_content_item">
+      <image src="../../images/diantaiImg/diantai3.png" class="p2_c_i_left"></image>
+      <view class="p2_c_i_right">
+        <view class="p2_cir_top">
+          <view class="p2_cirt_left">上海流行音乐</view>
+          <view class="p2_cirt_right">新</view>
+        </view>
+        <view class="p2_cir_bottom">音乐随心听</view>
+      </view>
+    </view>
+    <view class="p2_content_item">
+      <image src="../../images/diantaiImg/diantai4.png" class="p2_c_i_left"></image>
+      <view class="p2_c_i_right">
+        <view class="p2_cir_top">
+          <view class="p2_cirt_left">上海流行音乐</view>
+          <view class="p2_cirt_right">新</view>
+        </view>
+        <view class="p2_cir_bottom">音乐随心听</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<scroll-view scroll-x="true" enable-flex="true" class="scroll_view1">
+  <view class="scroll_item">
+    <image src="../../images/diantaiImg/diantai5.png"></image>
+    <view>日本文艺旅行地图定制“最日本”</view>
+  </view>
+  <view class="scroll_item">
+    <image src="../../images/diantaiImg/diantai6.png"></image>
+    <view >大内密谈-摇滚往事和塑料友谊</view>
+  </view>
+  <view class="scroll_item">
+    <image src="../../images/diantaiImg/diantai7.png"></image>
+    <view >历史逗你玩-世界上仅存的三只动物</view>
+  </view>
+  <view class="scroll_item">
+    <image src="../../images/diantaiImg/diantai5.png"></image>
+    <view >历史逗你玩-世界上仅存的三只动物</view>
+  </view>
+</scroll-view>
+
+<view class="scroll2_title">电台分类</view>
+<scroll-view scroll-x="true" enable-flex="true" class="scroll_view2">
+  
+  <view class="scroll2_content">
+    <view class="scroll_item2">
+      <image src="../../images/diantaiImg/diantai8.png"></image>
+      <view>音乐</view>
+    </view>
+    <view class="scroll_item2">
+      <image src="../../images/diantaiImg/diantai9.png"></image>
+      <view>儿童</view>
+    </view>
+    <view class="scroll_item2">
+      <image src="../../images/diantaiImg/diantai10.png"></image>
+      <view>交通</view>
+    </view>
+    <view class="scroll_item2">
+      <image src="../../images/diantaiImg/diantai11.png"></image>
+      <view>影视</view>
+    </view>
+    <view class="scroll_item2">
+      <image src="../../images/diantaiImg/diantai8.png"></image>
+      <view>音乐</view>
+    </view>
+  </view>
+</scroll-view>
+</view>

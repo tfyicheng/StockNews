@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "yinyue":"../../components/special/special"
+  },
+  "navigationBarBackgroundColor": "#1576E8",
+  "navigationBarTitleText": "主页",
+  "navigationBarTextStyle":"white"
+}
