@@ -8,12 +8,12 @@
     "pages/more/more",
     "pages/view/view",
     "components/special/special",
-    "components/live/live"
+    "components/live/live",
+    "pages/quotation/quotation"
   ],
-  
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "S-News",
+    "navigationBarTitleText": "",
     "navigationBarBackgroundColor": "#1576E8"
   },
   "tabBar": {
@@ -33,10 +33,10 @@
         "text": "视讯"
       },
       {
-        "pagePath": "pages/more/more",
+        "pagePath": "pages/quotation/quotation",
         "iconPath": "images/faxian.png",
         "selectedIconPath": "images/faxian_2.png",
-        "text": "发现"
+        "text": "行情"
       },
       {
         "pagePath": "pages/personal/personal",

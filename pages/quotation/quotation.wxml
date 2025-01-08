@@ -1,0 +1,84 @@
+<view class="user_wrap"  wx:if="{{!args}}">
+	<!-- <view class="img">
+		<image src="/icon/user.png" mode="widthFix"></image>
+	</view> -->
+	<vuew class="user_name">大盘</vuew>
+</view>
+
+<view class="user_wrap" bind:tap="exit" wx:if="{{args}}">
+	<view class="img">
+		<image src="{{args.avatarUrl}}" mode="widthFix"></image>
+	</view>
+	<vuew class="user_name">{{args.nickName}}</vuew>
+</view>
+
+<view class="title">行情</view>
+<view class="date">{{date}}</view>
+
+<view class="card_wrap">
+	<view class="card_item" >
+		<view class="card_title">上证指数</view>
+		<view class="count">{{shang_z[1]}}</view>
+		<view class="card_bot">
+			<view class="value">+{{shang_z[2]}}</view>
+			<view class="value">+{{shang_z[3]}}%</view>
+		</view>
+	</view>
+
+	<view class="card_item" >
+		<view class="card_title">深证成指</view>
+		<view class="count">{{shen_z[1]}}</view>
+		<view class="card_bot">
+			<view class="value">+{{shen_z[2]}}</view>
+			<view class="value">+{{shen_z[3]}}%</view>
+		</view>
+	</view>
+
+	<view class="card_item" >
+		<view class="card_title">可创板指</view>
+		<view class="count">{{k_c[1]}}</view>
+		<view class="card_bot">
+			<view class="value">+{{k_c[2]}}</view>
+			<view class="value">+{{k_c[3]}}%</view>
+		</view>
+	</view>
+</view>
+
+<view class="line_wrap">
+	<view class="line" style="width: {{sub_len}};">
+		<view class="line_w" style="background-color: greenyellow;"></view>
+		<view class="line_tip" style="text-align: left;">跌{{num_sub}}</view>
+	</view>
+
+	<!-- <view class="line">
+		<view class="line_w" style="background-color: gray;width: {{num_add/(num_add+num_sub)}};"></view>
+		<view class="line_tip">跌</view>
+	</view> -->
+
+	<view class="line" style="width: {{add_len}};">
+		<view class="line_w"></view>
+		<view class="line_tip">涨{{num_add}}</view>
+	</view>
+</view>
+
+<view class="title ">股票排行榜</view>
+
+<view class="top_wrap">
+	<view class="top_item">股票名称</view>
+	<view class="top_item">最新价</view>
+	<view class="top_item">涨跌幅</view>
+</view>
+
+<view class="item_wrap" wx:for="{{list}}" wx:key="index" bind:tap="go_test" data-index="{{index}}">
+	<view class="title_wrap">
+		<view class="title_name">{{item.name}}</view>
+		<view class="title_count">{{item.code}}</view>
+	</view>
+	<view class="item_count">{{item.buy}}</view>
+	<view class="per">{{item.changepercent}}%</view>
+</view>
+
+<view class="title">同花顺新闻</view>
+<view class="list_wrap">
+	<view class="list_item" wx:for="{{news}}" wx:key="index">{{item.title}}</view>
+</view>

@@ -283,4 +283,6 @@
 </view>
 </view>
 
+<web-view src="https://finance.sina.cn/"></web-view>
+//嵌入新浪财经的网页
 
